@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+header{
+    height: 90vh;
+    width: 100vw;
+    background-image: url('/assets/images/Formation\ En\ nom-Formation.png');
+    background-size: cover;
+    background-position: center;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.ban-text{
+    position: absolute;
+    bottom: 10rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.ban-text h1{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.navbar-brand img{
+    height: 80px;
+    width: 110px;
+}
+
+.nav-item .nav-link{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.navbar-toggler{
+    color: #fff;
+}
+.bi-list{
+    color: #000;
+    background-color: #fff;
+    font-size: 2rem;
+}
+.img-histo{
+    height: 400px;
+    width: 550px;
+}
+.contenu{
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+}
+.devenir{
+    text-align: center;
+}
+.card .temo{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+}
+
+.forma{
+    background-image: url('/assets/images/pc.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.about{
+    background-color: #000;
+}
+.navbar-nav a{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.banner{
+    height: 60vh;
+    background-image: url('/assets/images/inscriptions.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.ins{
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 1px 8px 8px rgba(0, 0, 0, 0.7);
+    padding: 20px 30px;
+    color: #fff;
+}
+
+.btn{
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.fw{
+    font-weight: 700;
+}
+
+.myform{
+    max-width: 100%;
+    padding: 1rem 2rem;
+    color: #fff;
+
+}
+.modal-body{
+    padding: 0;
+    background-color: #000;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+}
+.modal-title{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.modal-body p{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.modal-body p a{
+    font-size: 1.2rem;
+}
+.btn-close{
+    position: absolute;
+    right: 0;
+    padding: .5rem;
+    background-color: #fff;
+}
+.modal-content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bgColor{
+    background-color: #000;
+    border-bottom: 1px solid #959698;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-collapse {
+      background-color: #000;
+    }
+  }
