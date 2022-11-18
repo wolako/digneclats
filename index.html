@@ -8,33 +8,37 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg" id="nav">
-            <div class="container">
+            <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="/assets/images/logo.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="bi bi-list"></i>
               </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="/">Acceuil</a>
+                  <li class="nav-item px-3">
+                    <a class="nav-link" href="/">Acceuil</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Formations</a>
+                  <li class="nav-item px-3">
+                    <a class="nav-link" href="/formation.html">Formations</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item px-3">
+                    <a class="nav-link" href="/boutique.html">Boutique</a>
+                  </li>
+                  <li class="nav-item px-3">
                     <a class="nav-link" href="/inscription.html">Inscription</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#connexionModal" href="/connexion.html">Connexion</a>
+                  <li class="nav-item px-3">
+                    <a class="nav-link" href="/connexion.html">Connexion</a>
                   </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
-                    <a href="" class="text-white">Tarif : 20$</a>
+                    <a href="" class="text-white nav-link">Tarif à partir de : 20$</a>
                 </ul>
               </div>
             </div>
@@ -45,56 +49,11 @@
                 <H1>Digneclats: Une Formations <br> qui transforme votre carrière</H1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, voluptatibus!</p>
                 
-                <a class="btn btn-outline-dark mt-3 text-white" href="/inscription.html" role="button" type="button">Inscrivez-vous</a>
+                <a class="btn btn-outline-danger mt-3 text-white" href="/inscription.html" role="button" type="button">Inscrivez-vous</a>
                     
             </div>
         </div>
     </header>
-
-    <!-- Modal -->
-    <div class="modal fade" id="connexionModal" tabindex="-1" aria-labelledby="connexion" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="myform">
-                        <h5 class="modal-title" id="connexion">Se connecter</h5>
-                        <form action="" class="row">
-                        <div class="my-3 col-12">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" required />
-                        </div>
-                        <div class="my-3 col-12">
-                            <label for="pwd">Mot de passe</label>
-                            <input type="password" id="pwd" class="form-control" required />
-                        </div>
-                        <div class="form-check mt-1 col-12">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                            <label class="form-check-label" for="flexCheckChecked">
-                            Checked checkbox
-                            </label>
-                        </div>
-                        <div class="col-12">
-                            <button type="button" class="btn btn-outline-light mt-3 mb-0">Connexion</button>
-                        </div>
-                        </form>
-                    </div>
-                    <hr>
-                    <div class="row mb-2">
-                        <div class="col-12">
-                        <p>
-                            <a href="#" class="text-muted">mot de pass oublié</a>
-                        </p>
-                        </div>
-                        <div class="col-12">
-                            <p>Pas de compte ? <a href="/inscription.html" class="text-muted">Enrégistrez-vous</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <div class="section py-3">
         <div class="container">
@@ -110,15 +69,13 @@
                         similique laborum iusto dolore aspernatur natus aperiam earum ea eum? 
                         Vitae iure fugiat harum error.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Maiores nemo fugiat explicabo alias non officia, 
-                        similique laborum iusto dolore aspernatur natus aperiam earum ea eum? 
-                        Vitae iure fugiat harum error.
-                    </p>
         
+                    </p>        
                 </div>
             </div>
         </div>
     </div>
+
     <div class="section my-3">
         <div class="about p-3">
             <div class="container">
@@ -154,6 +111,7 @@
                 </div>
             </div>
         </div>
+    
         <div class="container">
             <div class="devenir py-4">
                 <h3 class="py-4">Ce que vous serez capable de faire après ces formation</h3>
@@ -169,49 +127,84 @@
                         <p><i class="bi bi-6-square-fill"></i> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>    
                 </div>
-                <a class="btn btn-dark mt-3" href="/inscription.html" role="button" type="button">Inscrivez-vous</a>
+                <a class="btn btn-outline-danger mt-3" href="/inscription.html" role="button" type="button">Inscrivez-vous</a>
             </div>
         </div>
     </div>
+    
     <div class="main py-4 bg-dark">
+
         <div class="container">
             <h2 class="text-white py-3">Ils Temoignent</h2>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card mb-2">
-                        <img src="/assets/images/OIP.jpg" alt="">
-                        <div class="temo">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <img src="/assets/images/OIP.jpg" class="d-block w-10 h-10" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 temo text-white p-4">
                             <h3>Lea.</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod voluptatem, deleniti molestiae quas possimus temporibus cum sequi.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Consequuntur quod voluptatem, deleniti molestiae quas possimus 
+                            temporibus cum sequi.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ad iste et ullam qui, incidunt magnam quisquam modi culpa iusto architecto 
+                            fugiat, atque aliquam excepturi maiores aliquid sapiente? Possimus, tempora molestiae.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card mb-2">
-                        <img src="/assets/images/rizo.jpg" alt="">
-                        <div class="temo">
-                            <h3>Pamela.</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod voluptatem, deleniti molestiae quas possimus temporibus cum sequi.</p>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <img src="/assets/images/rizo.jpg" class="d-block w-60 h-60" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-8 temo text-white p-4">
+                            <h3>Pamela</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Consequuntur quod voluptatem, deleniti molestiae quas possimus 
+                            temporibus cum sequi.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ad iste et ullam qui, incidunt magnam quisquam modi culpa iusto architecto 
+                            fugiat, atque aliquam excepturi maiores aliquid sapiente? Possimus, tempora molestiae.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card mb-2">
-                        <img src="/assets/images/custom.jpg" alt="">
-                        <div class="temo">
-                            <h3>Alice B.</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod voluptatem, deleniti molestiae quas possimus temporibus cum sequi.</p>
+                  </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <img src="/assets/images/custom.jpg" class="d-block w-60 h-60" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 temo text-white p-4">
+                                <h3>Diane</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Consequuntur quod voluptatem, deleniti molestiae quas possimus 
+                                temporibus cum sequi.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Ad iste et ullam qui, incidunt magnam quisquam modi culpa iusto architecto 
+                                fugiat, atque aliquam excepturi maiores aliquid sapiente? Possimus, tempora molestiae.
+                                </p>
+                            </div>
                         </div>
                     </div>
+                  </div>
                 </div>
             </div>
         </div>
-    </div>
+
     <div class="section-cont py-4">
         <div class="container">
             <h2 class="p-3">Contactez-nous</h2>
             <div class="row">
-                <div class="col-md-6 col-lg-6 p-4 text-lg-start">
+                <div class="col-md-6 col-lg-6 p-4 text-lg-start info-cont">
                     <p class="fw">
                         Pour tout information, contactez-nous via nos coordonnés ci-dessous ou remplissez le formulaire
                     </p>
@@ -222,36 +215,9 @@
                     <h4>Telephone</h4>
                     <p>xxx.xxx.xxx</p>
                 </div>
-                <div class="col-md-6 col-lg-6 p-4 forma">
-                    <form class="row g-3 needs-validation" novalidate>
-                        <div class="col-12">
-                          <label for="validationNo" class="form-label">Nom</label>
-                          <input type="text" class="form-control" id="validationNo" value="" required>
-                        </div>
-                        <div class="col-12">
-                          <label for="validationEm" class="form-label">Votre Email</label>
-                          <div class="input-group has-validation">
-                            <input type="email" class="form-control" id="validationEm" aria-describedby="inputGroupPrepend" required>
-                            <div class="invalid-feedback">
-                              Veuiller entrer un adresse mail valide.
-                            </div>
-                          </div>
-                        </div>       
-                        <div class="col-12">
-                          <label for="validationTel" class="form-label">Téléphone</label>
-                          <input type="tel" class="form-control" id="validationTel" required>
-                          <div class="invalid-feedback">
-                            Veuiller entrer un numero valide.
-                          </div>
-                        </div>
-                        <div class="col-12">
-                            <label for="validationMes" class="form-label">Message</label>
-                            <textarea name="message" class="form-control" id="validationMes" rows="3" required></textarea>
-                        </div>
-                        <div class="col-12">
-                          <button class="btn btn-outline-dark" type="submit">Envoyer</button>
-                        </div>
-                    </form>
+                <div class="col-md-6 col-lg-6 p-4 bg-dark">
+                    <h2 class="text-white py-3">Digneclats vous attends</h2>
+                    <a class="btn btn-outline-danger text-white mt-3" href="/inscription.html" role="button" type="button">Inscrivez-vous maintenant</a>
                 </div>
             </div>
         </div>

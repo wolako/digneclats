@@ -14,11 +14,14 @@ h2{
     font-size: 2rem;
     font-weight: 500;
 }
+.card{
+    border-radius: 0;
+}
 
 header{
     height: 90vh;
     width: 100vw;
-    background-image: url('/assets/images/Formation\ En\ nom-Formation.png');
+    background-image: url('/assets/images/FormationEnNom-Formation.png');
     background-size: cover;
     background-position: center;
 }
@@ -42,6 +45,7 @@ a{
 
 .navbar{
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: transparent;
     z-index: 1000;
@@ -54,8 +58,12 @@ a{
 
 .nav-item .nav-link{
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
+}
+
+.nav-item .nav-link:hover{
+    color: rgb(162, 40, 40);
 }
 
 .navbar-toggler{
@@ -78,20 +86,18 @@ a{
 .devenir{
     text-align: center;
 }
-.card .temo{
+/* .card .temo{
     position: absolute;
     bottom: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 10px;
+} */
+.temo p{
+    font-size: 1.4rem;
 }
 
-.forma{
-    background-image: url('/assets/images/pc.jpg');
-    background-size: cover;
-    background-position: center;
-}
 .about{
     background-color: #000;
 }
@@ -109,28 +115,40 @@ a{
 .ins{
     background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 1px 8px 8px rgba(0, 0, 0, 0.7);
+    padding: 1rem 5rem;
+    color: #fff;
+    max-width: 80%;
+}
+.con{
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 1px 0 10px 2px rgb(0, 0, 0);
     padding: 20px 30px;
     color: #fff;
+    max-width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
 }
-
+.ght-insc{
+    padding: 0 10px;
+}
 .btn{
-    border: 1px solid #fff;
+    border: 1px solid rgb(95, 2, 2);
     border-radius: 5px;
 }
 .fw{
     font-weight: 700;
 }
-
+.info-cont{
+    border: 2px solid #000;
+    padding: 20px;
+}
 .myform{
     max-width: 100%;
     padding: 1rem 2rem;
     color: #fff;
-
 }
-.modal-body{
-    padding: 0;
-    background-color: #000;
-    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.7);
+.connect-footer{
+    text-align: center;
 }
 .modal-title{
     font-size: 2rem;
@@ -148,12 +166,7 @@ a{
 .modal-body p a{
     font-size: 1.2rem;
 }
-.btn-close{
-    position: absolute;
-    right: 0;
-    padding: .5rem;
-    background-color: #fff;
-}
+
 .modal-content{
     width: 100%;
     margin: 0 auto;
@@ -161,9 +174,14 @@ a{
 
 .bgColor{
     background-color: #000;
-    border-bottom: 1px solid #959698;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgb(95, 2, 2);
+    box-shadow: 0 3px 4px rgba(95, 2, 2, 0.5);
     transition: all 0.5s;
+}
+
+.card .f-image{
+    height: 240px;
+    width: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -171,5 +189,15 @@ a{
       background-color: #000;
       padding: 20px;
       line-height: 3rem;
+    }
+    .con{
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .ins{
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
     }
   }
