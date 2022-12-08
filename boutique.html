@@ -15,38 +15,43 @@
   <div class="banner">
   <!-- navigation -->
 
-  <nav class="navbar navbar-expand-lg" id="nav">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="/assets/images/logo.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list"></i>
-      </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item px-3">
-            <a class="nav-link" href="/">Acceuil</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" href="/formation.html">Formations</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" href="/">Ma boutique</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" href="/inscription.html">Inscription</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" href="/connexion.html">Connexion</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ms-auto">
-            <a href="" class="text-white nav-link">Tarif à partir de : 20$</a>
-        </ul>
+    <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assets/images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="offcanvas navbar-offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-lg-0">
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/">Acceuil</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/formation.html">Formations</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/boutique.html">Ma boutique</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/inscription.html">Inscription</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/connexion.html">Connexion</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav price ms-auto">
+                <a href="" class="nav-link">Tarif à partir de : 25 euro</a>
+              </ul>
+          </div>
+        </div>
       </div>
-    </div>
-</nav>
+    </nav>
     <!-- fin navigation -->
-    </div>
+  </div>
 
     <div class="container my-4">
       <h2 class="text-dark py-3 text-center">Boutique</h2>

@@ -15,7 +15,7 @@ h2{
     font-weight: 500;
 }
 .card{
-    border-radius: 0;
+    border-radius: 6px;
 }
 
 header{
@@ -25,10 +25,16 @@ header{
     background-size: cover;
     background-position: center;
 }
+
+footer{
+    background-color: #000;
+}
+
 a{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
+    list-style: none;
 }
 .ban-text{
     position: absolute;
@@ -47,53 +53,53 @@ a{
     position: fixed;
     top: 0;
     width: 100%;
+    height: 90px;
     background-color: transparent;
     z-index: 1000;
 }
 
 .navbar-brand img{
-    height: 80px;
-    width: 110px;
+    width: 250px;
+    height: 100px;
 }
 
 .nav-item .nav-link{
-    color: #fff;
+    color: #000;
     font-size: 1.3rem;
     font-weight: 500;
 }
-
+.price .nav-link{
+    color: #000;
+}
 .nav-item .nav-link:hover{
-    color: rgb(162, 40, 40);
+    color: #C40FB7;
 }
 
-.navbar-toggler{
+.navbar-toggler span{
+    color: #fff;
+}
+.navbar-toggler-icon{
     color: #fff;
 }
 .bi-list{
-    color: #000;
-    background-color: #fff;
+    color: #fff;
     font-size: 2rem;
 }
+
+/* partie mon histoire */
 .img-histo{
     height: 400px;
     width: 550px;
 }
 .contenu{
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     padding: 50px;
 }
 .devenir{
     text-align: center;
 }
-/* .card .temo{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px;
-} */
+
 .temo p{
     font-size: 1.4rem;
 }
@@ -121,16 +127,20 @@ a{
 }
 .con{
     background-color: rgba(0, 0, 0, 0.9);
-    box-shadow: 1px 0 10px 2px rgb(0, 0, 0);
+    box-shadow: 1px 0 10px 8px rgb(0, 0, 0, 0.7);
     padding: 20px 30px;
     color: #fff;
-    max-width: 60%;
+    max-width: 40%;
     margin: 0 auto;
     border-radius: 10px;
 }
-.ght-insc{
-    padding: 0 10px;
+.connexion{
+    padding: 40px 0;
+    background-image: url('/assets/images/pc.jpg');
+    background-position: center;
+    background-size: cover;
 }
+
 .btn{
     border: 1px solid rgb(95, 2, 2);
     border-radius: 5px;
@@ -147,8 +157,8 @@ a{
     padding: 1rem 2rem;
     color: #fff;
 }
-.connect-footer{
-    text-align: center;
+.connect-footer a{
+    text-decoration: none;
 }
 .modal-title{
     font-size: 2rem;
@@ -173,7 +183,7 @@ a{
 }
 
 .bgColor{
-    background-color: #000;
+    background-color: #fff;
     border-bottom: 1px solid rgb(95, 2, 2);
     box-shadow: 0 3px 4px rgba(95, 2, 2, 0.5);
     transition: all 0.5s;
@@ -183,12 +193,41 @@ a{
     height: 240px;
     width: auto;
 }
+.bg{
+    background-color: #000;
+}
+
+/* partie pack */
+
+.header-card{
+    border-bottom: 1px #000 solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-card h2{
+    color: #C40FB7;
+}
+
 
 @media screen and (max-width: 768px) {
-    .navbar-collapse {
+    .navbar-offcanvas {
       background-color: #000;
       padding: 20px;
       line-height: 3rem;
+    }
+    .nav-item .nav-link{
+        color: #fff;
+    }
+    .btn-close{
+        color: #fff;
+    }
+    .nav-item .nav-link:hover{
+        background-color: rgb(95, 2, 2);
+        border-radius: 10px;
+    }
+    .ght-insc{
+        width: 100%;
     }
     .con{
         max-width: 100%;

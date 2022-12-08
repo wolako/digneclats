@@ -7,92 +7,54 @@
     <title>Digneclats</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
   <div class="banner">
   <!-- navigation -->
 
-  <nav class="navbar navbar-expand-lg" id="nav">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="/assets/images/logo.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list"></i>
-      </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item px-3">
-            <a class="nav-link" href="/">Acceuil</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" href="#">Formations</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" href="/boutique.html">Ma boutique</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" href="/inscription.html">Inscription</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" href="/connexion.html">Connexion</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ms-auto">
-            <a href="" class="text-white nav-link">Tarif à partir de : 20$</a>
-        </ul>
-      </div>
-    </div>
-</nav>
-    <!-- fin navigation -->
-    </div>
-
-    <div class="modal fade" id="connexionModal" tabindex="-1" aria-labelledby="connexion" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-          <div class="modal-body">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              <div class="myform">
-                  <h5 class="modal-title" id="connexion">Se connecter</h5>
-                  <form action="" class="row">
-                  <div class="my-3 col-12">
-                      <label for="email">Email</label>
-                      <input type="email" id="email" class="form-control" required />
-                  </div>
-                  <div class="my-3 col-12">
-                      <label for="pwd">Mot de passe</label>
-                      <input type="password" id="pwd" class="form-control" required />
-                  </div>
-                  <div class="form-check mt-1 col-12">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                      <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
-                      </label>
-                  </div>
-                  <div class="col-12">
-                      <button type="button" class="btn btn-outline-light mt-3 mb-0">Connexion</button>
-                  </div>
-                  </form>
-              </div>
-              <hr>
-              <div class="row mb-2">
-                  <div class="col-12">
-                  <p>
-                      <a href="#" class="text-muted">mot de pass oublié</a>
-                  </p>
-                  </div>
-                  <div class="col-12">
-                      <p>Pas de compte ? <a href="/inscription.html" class="text-muted">Enrégistrez-vous</a></p>
-                  </div>
-              </div>
+    <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assets/images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="offcanvas navbar-offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-lg-0">
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/">Acceuil</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/formation.html">Formations</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/boutique.html">Ma boutique</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="#">Inscription</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/connexion.html">Connexion</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav price ms-auto">
+                <a href="" class="nav-link">Tarif à partir de : 25 euro</a>
+            </ul>
           </div>
         </div>
       </div>
+    </nav>
+  <!-- fin navigation -->
   </div>
 
     <div class="container ins my-4">
-        <h1>Inscription</h1>
+        <h1 class="my-4">Inscrivez-vous</h1>
           <form class="row g-3 ght-insc needs-validation" novalidate>
             <div class="col-md-6">
               <label for="validationNo" class="form-label">Nom</label>
@@ -126,7 +88,7 @@
                 Veuiller entrer un numero valide.
               </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 my-3">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                 <label class="form-check-label" for="invalidCheck">
@@ -143,9 +105,7 @@
         </form>
     </div>
 
-    <footer
-            class="text-center text-lg-start text-white"
-            style="background-color: #000">
+    <footer class="text-center text-lg-start text-white">
       <div class="container p-4 pb-0">
         <section class="p-3 pt-0">
           <div class="row d-flex align-items-center">
